@@ -1,0 +1,156 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* =======================
+   LOGIN PAGE STYLES
+   ======================= */
+
+.login-page.login-box {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 1s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.1);
+}
+
+.login-page.login-box.glow {
+    animation: glow-fade 3.5s ease-in-out infinite;
+}
+
+@keyframes glow-fade {
+    0% {
+        box-shadow:
+            0 0 5px rgba(255, 215, 0, 0.15),
+            0 0 10px rgba(255, 215, 0, 0.2),
+            0 0 15px rgba(255, 165, 0, 0.15),
+            inset 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+
+    50% {
+        box-shadow:
+            0 0 20px rgba(255, 215, 0, 0.35),
+            0 0 40px rgba(255, 165, 0, 0.3),
+            0 0 60px rgba(255, 215, 0, 0.35),
+            inset 0 0 20px rgba(255, 215, 0, 0.15);
+    }
+
+    100% {
+        box-shadow:
+            0 0 5px rgba(255, 215, 0, 0.15),
+            0 0 10px rgba(255, 215, 0, 0.2),
+            0 0 15px rgba(255, 165, 0, 0.15),
+            inset 0 0 10px rgba(255, 215, 0, 0.1);
+    }
+}
+
+
+
+.table-inner {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.table-inner h2 {
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.table-inner input {
+    width: 260px;
+    height: 38px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.table-inner button {
+    padding: 10px;
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffcc70, #ed2957);
+    background-size: 200% auto;
+    background-position: left center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-position 1s ease-in-out;
+}
+
+.table-inner button:hover {
+    background-position: right center;
+}
+
+.table-inner .options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 16px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.table-inner .options a {
+    text-decoration: none;
+    color: white;
+}
+
+.table-inner .options a:hover {
+    text-decoration: underline;
+}
+
+
+/* =======================
+   WELCOME PAGE STYLES
+   ======================= */
+
+.welcome-page.welcome-box.h1 {
+    font-size: 36px;
+    text-shadow: 0 0 10px gold;
+}
+
+.welcome-page.welcome-box.p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.welcome-page.welcome-box.a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff416c, #ffcc70);
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.welcome-page.welcome-box.a:hover {
+    box-shadow: 0 0 15px gold;
+}

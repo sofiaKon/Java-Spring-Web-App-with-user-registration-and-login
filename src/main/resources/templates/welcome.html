@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body class="welcome-page">
+    <div class="welcome-box">
+        <h1>Добро пожаловать!</h1>
+        <p>Вы успешно вошли в систему.</p>
+        <a href="/login">Сменить аккаунт</a>
+        <a href="@{/changePassword}">Сменить пароль</a>
+    </div>
+</body>
+
+</html>
