@@ -1,7 +1,6 @@
-package com.example.loginform;
+
 
 import java.sql.*;
-import java.util.Random;
 
 //Вход Базу данных SQL
 public class UserManager {
